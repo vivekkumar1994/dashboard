@@ -1,0 +1,74 @@
+/* src/dashboard/dashboard.css */
+
+/* Overall Dashboard Container */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f7b733, #fc4a1a);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.topbar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Filter Section */
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.filter select, .filter input {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual Card */
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter {
+    flex-direction: column;
+    align-items: center;
+  }
+}
